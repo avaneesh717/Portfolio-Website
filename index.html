@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+  </head>
+  <body>
+    <div id="particles-js"></div>
+   
+
+
+    <nav id="desktop-nav">
+      <div class="logo">Avaneesh Gaykar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Avaneesh Gaykar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Avaneesh Gaykar profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Avaneesh Gaykar</h1>
+        <p class="section__text__p2">Web Developer and Digital Marketer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/avaneesh-gaykar-667627292/'"
+          />
+          
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Skills.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Current Focus</h3>
+              <p>Aspiring Software Engineer focused on frontend development.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors in Computer Engineering<br /> 2022-2026</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="color: #fff;">
+              I’m a passionate developer skilled in programming and problem-solving, with a strong focus on building clean, user-friendly solutions. Alongside my technical expertise, I bring experience in digital marketing and UI/UX design, ensuring every product is both visually engaging and conversion-driven. I’m also proficient in data automation, helping streamline workflows and enhance productivity through smart, scalable solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AppScript</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basics</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Database Management</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Queries</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Manipulation</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
+      <section id="experience" style="padding: 50px 20px; ">
+    <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #fff;">Experience</h2>
+
+    <!-- Experience Card 1 -->
+    <div style="max-width: 800px; margin: 0 auto 30px; padding: 25px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <h3 style="margin: 0; font-size: 22px; color: #fff;"> Data Automation Engineer</h3>
+          <p style="margin: 5px 0 10px; font-weight: bold; color: #fff;"> Mystic Panels and Planks, Mumbai</p>
+        </div>
+        <span style="font-size: 14px; color: #fff;">APR 25 - PRESENT</span>
+      </div>
+      <p style="margin-top: 12px; color: #fff;">
+        Developed automated data pipelines to integrate TallyPrime with Google Sheets and BigQuery, enabling seamless ETL operations using SQL and Google Apps Script. Built dynamic, interactive dashboards for business analytics and collaborated with stakeholders to ensure data accuracy and timely reporting.
+      </p>
+    </div>
+
+    <!-- Experience Card 2 -->
+    <div style="max-width: 800px; margin: 0 auto 30px; padding: 25px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div>
+          <h3 style="margin: 0; font-size: 22px; color: #fff;">Digital Marketing Intern</h3>
+          <p style="margin: 5px 0 10px; font-weight: bold; color: #fff;"> Stealth, Mumbai</p>
+        </div>
+        <span style="font-size: 14px; color: #fff;">JULY 24 - DEC 24</span>
+      </div>
+      <p style="margin-top: 12px; color: #fff;">
+        Worked at Stealth, a global design agency, where I gained hands-on experience in web optimization and UI/UX design. Specialized in SEO to boost website visibility, used Figma for prototyping, and developed customized WordPress sites with strong HTML skills for layout and functionality enhancements.
+      </p>
+    </div>
+      </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:avaneeshgaykar7@gmail.com">avaneeshgaykar7@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/avaneesh-gaykar-667627292/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="color: #fff;">Copyright &#169; 2025 Avaneesh Gaykar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+  particlesJS('particles-js', {
+    particles: {
+      number: { value: 80 },
+      size: { value: 3 },
+      color: { value: "#ffffff" },
+      move: { speed: 1 },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.4,
+        width: 1
+      }
+    }
+  });
+</script>
+   
+
+
+
+  </body>
+</html>
