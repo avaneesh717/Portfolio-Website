@@ -7,80 +7,12 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <!-- THREE.js -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(145deg, #0d0d0d, #000000);
-    color: white;
-    overflow-x: hidden;
-  }
-
- .bg-grid {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
-  perspective: 1000px;
-  background-color: #0f0f0f; /* new: subtle black-gray background */
-}
-
-
-  .icon-container {
-    position: absolute;
-    animation: float 4s ease-in-out infinite;
-    transform-style: preserve-3d;
-  }
-
-  .icon-container i {
-    font-size: 44px;
-    color: rgba(255, 255, 255, 0.35);
-    transform: rotateX(20deg) rotateY(20deg);
-  }
-
-  @keyframes float {
-    0%   { transform: translateY(0px) rotateY(0deg); }
-    50%  { transform: translateY(-20px) rotateY(10deg); }
-    100% { transform: translateY(0px) rotateY(0deg); }
-  }
-</style>
-
-
-
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
   </head>
   <body>
-   <div class="bg-grid">
-  <div class="icon-container" style="top: 10%; left: 10%"><i class="devicon-html5-plain"></i></div>
-  <div class="icon-container" style="top: 20%; left: 25%"><i class="devicon-css3-plain"></i></div>
-  <div class="icon-container" style="top: 30%; left: 40%"><i class="devicon-javascript-plain"></i></div>
-  <div class="icon-container" style="top: 60%; left: 15%"><i class="devicon-java-plain"></i></div>
-  <div class="icon-container" style="top: 80%; left: 55%"><i class="devicon-nodejs-plain"></i></div>
-  <div class="icon-container" style="top: 45%; left: 75%"><i class="devicon-python-plain"></i></div>
-  <div class="icon-container" style="top: 25%; left: 65%"><i class="devicon-react-original"></i></div>
-  <div class="icon-container" style="top: 70%; left: 35%"><i class="devicon-android-plain"></i></div>
-  <div class="icon-container" style="top: 50%; left: 20%"><i class="devicon-mongodb-plain"></i></div>
-  <div class="icon-container" style="top: 15%; left: 80%"><i class="devicon-git-plain"></i></div>
-  <div class="icon-container" style="top: 35%; left: 90%"><i class="devicon-docker-plain\"></i></div>
-</div>
-
-
-   
-
+    <div id="vanta-bg" style="width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1;"></div>
 
     <nav id="desktop-nav">
       <div class="logo">Avaneesh Gaykar</div>
@@ -384,7 +316,24 @@
       <p style="color: #fff;">Copyright &#169; 2025 Avaneesh Gaykar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-   
+   <script>
+  VANTA.FOG({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0xffffff,
+    midtoneColor: 0x0a0a0a,
+    lowlightColor: 0x0a0a0a,
+    baseColor: 0x000000,
+    blurFactor: 0.5,
+    speed: 2.0,
+    zoom: 1.0
+  });
+</script>
+
 
 
 
