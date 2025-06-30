@@ -17,46 +17,45 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 
   .icon-container {
-  position: absolute;
-  animation: float 6s ease-in-out infinite;
-  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s;
-  cursor: pointer;
-}
-
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+    opacity: 0.15;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+  }
 
   .icon-container:hover {
-  opacity: 1;
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 8px #00ffff);
-}
-
+    opacity: 1;
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 12px #00ffff);
+  }
 
   .icon-container.clicked {
-    filter: drop-shadow(0 0 16px #00ffff);
+    filter: drop-shadow(0 0 18px #00ffff);
     animation: glow 0.4s ease-out;
   }
 
   .icon-container i {
-  font-size: 48px;
-  color: rgba(255, 255, 255, 0.2); /* subtle white */
-}
-
+    font-size: 44px;
+    color: rgba(255, 255, 255, 0.3); /* ✅ faint but visible */
+  }
 
   @keyframes float {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-15px); }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
   }
 
   @keyframes glow {
-    0%   { filter: drop-shadow(0 0 0px #00ffff); }
-    50%  { filter: drop-shadow(0 0 12px #00ffff); }
+    0% { filter: drop-shadow(0 0 0px #00ffff); }
+    50% { filter: drop-shadow(0 0 12px #00ffff); }
     100% { filter: drop-shadow(0 0 0px #00ffff); }
   }
 </style>
@@ -66,9 +65,10 @@
 
 
 
+
   </head>
   <body>
-    <div class="bg-grid">
+   <div class="bg-grid">
   <div class="icon-container" style="top: 10%; left: 10%"><i class="devicon-html5-plain"></i></div>
   <div class="icon-container" style="top: 20%; left: 25%"><i class="devicon-css3-plain"></i></div>
   <div class="icon-container" style="top: 30%; left: 40%"><i class="devicon-javascript-plain"></i></div>
@@ -79,8 +79,9 @@
   <div class="icon-container" style="top: 70%; left: 35%"><i class="devicon-android-plain"></i></div>
   <div class="icon-container" style="top: 50%; left: 20%"><i class="devicon-mongodb-plain"></i></div>
   <div class="icon-container" style="top: 15%; left: 80%"><i class="devicon-git-plain"></i></div>
-  <div class="icon-container" style="top: 35%; left: 90%"><i class="devicon-docker-plain"></i></div>
+  <div class="icon-container" style="top: 35%; left: 90%"><i class="devicon-docker-plain\"></i></div>
 </div>
+
 
    
 
