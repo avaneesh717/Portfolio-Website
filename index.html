@@ -23,18 +23,19 @@
   }
 
   .icon-container {
-    position: absolute;
-    animation: float 6s ease-in-out infinite;
-    opacity: 0.2;
-    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s;
-    cursor: pointer;
-  }
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s;
+  cursor: pointer;
+}
+
 
   .icon-container:hover {
-    opacity: 1;
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 8px #00ffff);
-  }
+  opacity: 1;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 8px #00ffff);
+}
+
 
   .icon-container.clicked {
     filter: drop-shadow(0 0 16px #00ffff);
@@ -42,9 +43,10 @@
   }
 
   .icon-container i {
-    font-size: 48px;
-    color: white;
-  }
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.2); /* subtle white */
+}
+
 
   @keyframes float {
     0%   { transform: translateY(0); }
