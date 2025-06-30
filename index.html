@@ -331,8 +331,14 @@
   );
   camera.position.z = 50;
 
-  const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("symbol-canvas"), alpha: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
+const renderer = new THREE.WebGLRenderer({
+  canvas: document.getElementById("symbol-canvas"),
+  alpha: true,           // ✅ enables transparency
+  antialias: true        // optional, for smoother edges
+});
+renderer.setClearColor(0x000000, 0); // ✅ this ensures background stays transparent
+renderer.setSize(window.innerWidth, window.innerHeight);
+
 
   const symbols = ["<", ">", "/", "{", "}", "(", ")", ";", "="];
   const fontSize = 5;
