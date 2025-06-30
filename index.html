@@ -9,7 +9,15 @@
     <link rel="stylesheet" href="mediaqueries.css" />
     <!-- THREE.js -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+  }
+
   .bg-grid {
     position: fixed;
     top: 0;
@@ -18,47 +26,28 @@
     height: 100vh;
     z-index: -1;
     background-image: 
-      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 
   .icon-container {
     position: absolute;
-    animation: float 6s ease-in-out infinite;
-    opacity: 0.15;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    cursor: pointer;
-  }
-
-  .icon-container:hover {
-    opacity: 1;
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 12px #00ffff);
-  }
-
-  .icon-container.clicked {
-    filter: drop-shadow(0 0 18px #00ffff);
-    animation: glow 0.4s ease-out;
+    animation: float 8s ease-in-out infinite;
   }
 
   .icon-container i {
-    font-size: 44px;
-    color: rgba(255, 255, 255, 0.3); /* ✅ faint but visible */
+    font-size: 42px;
+    color: rgba(255, 255, 255, 0.4); /* visible but not too bright */
   }
 
   @keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
     100% { transform: translateY(0); }
   }
-
-  @keyframes glow {
-    0% { filter: drop-shadow(0 0 0px #00ffff); }
-    50% { filter: drop-shadow(0 0 12px #00ffff); }
-    100% { filter: drop-shadow(0 0 0px #00ffff); }
-  }
 </style>
+
 
 
 
@@ -388,16 +377,7 @@
       <p style="color: #fff;">Copyright &#169; 2025 Avaneesh Gaykar. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-   <script>
-  document.querySelectorAll(".icon-container").forEach(icon => {
-    icon.addEventListener("click", () => {
-      icon.classList.add("clicked");
-      setTimeout(() => {
-        icon.classList.remove("clicked");
-      }, 400);
-    });
-  });
-</script>
+   
 
 
 
