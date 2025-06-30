@@ -443,8 +443,10 @@ footer p {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
   width: 100vw;
   height: 100vh;
-  background: #0a0a0a;
+  z-index: -1;
+  background: transparent; /* Make background transparent */
+  pointer-events: none; /* Prevents it from blocking clicks */
 }
+
