@@ -71,6 +71,7 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  z-index: 10000;
 }
 
 .hamburger-menu {
@@ -102,6 +103,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 10001;
 }
 
 .menu-links a {
@@ -174,6 +176,7 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  z-index: 1;
 }
 
 .section__text {
